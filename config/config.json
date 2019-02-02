@@ -1,0 +1,13 @@
+{
+  "development": {
+    "database": "sicuro",
+    "username": "root",
+    "password": "",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}
+
+
+
+
