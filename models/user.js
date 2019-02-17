@@ -52,15 +52,9 @@ module.exports = (sequelize, DataTypes) => {
         country: {
             type: DataTypes.STRING,
         },
-        createdAt: {
-            type: DataTypes.DATE,
-            allowNull: false,
-        },
-        updatedAt: {
-            field: 'updatedAt',
-            type: DataTypes.DATE,
-            allowNull: false,
-        },
     });
+    User.associate = (models) => {
+        User.hasMany(models.RestaurantPins, { foreignKey: 'user_id', sourceKey: 'id'});
+    };
     return User;
 };
