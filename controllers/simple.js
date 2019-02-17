@@ -1,7 +1,5 @@
 'use strict'
 
 module.exports = function (req, res) {
-  res.json({
-    hello: 'world!'
-  })
+  res.send('Sicuro API')
 }
